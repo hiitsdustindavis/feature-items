@@ -1,0 +1,155 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  /*border:1px dashed #000;*/
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  /*border: 1px dotted red;*/
+  background-color: red;
+}
+
+.nav li {
+  /*border: 1px dotted blue;*/
+  background-color: blue;
+  display: inline;
+  list-style: none;
+}
+
+.main-header {
+  background-color: black;
+}
+
+.second-header {
+  background-color: yellow;
+}
+
+.photo {
+  background-color: aqua;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*Mobile View*/
+@media only screen and (min-width: 400px) {
+  .logo {
+    height: 20px;
+    width: 105px;
+  }
+
+  .nav li {
+    height: 10px;
+    width: 50px;
+    padding: 10px;
+    float: left;
+    margin: 10px 5px 10px 0;
+  }
+
+  .main-header {
+    width: 360px;
+    height: 20px;
+    margin: 80px 0px 10px 0;
+  }
+
+  .second-header {
+    width: 380px;
+    height: 20px;
+    margin: 10px 0px 60px 0;
+  }
+
+  .photo {
+    width: 380px;
+    height: 380px;
+    margin: 0px 0 10px 0;
+  }
+}
+/*End mobile view*/
+
+/*Portrait View*/
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .container-item{
+    margin: 0;
+  }
+  .nav li {
+    float: right;
+    width: 50px;
+    height: 8px;
+    margin: 0px 5px;
+  }
+
+  .nav {
+    margin: 0px 30% 0 30%;
+  }
+
+  .logo {
+    float: left;
+    margin: 0px 0;
+  }
+
+  /*.wrapper {
+    width: 800px
+  }*/
+
+  #item1, #item3 {
+    width: 380px;
+    float: left;
+    margin: 0 0px 0 0px;
+    /*border: 1px solid magenta;*/
+  }
+
+  #item2, #item4 {
+    width: 380px;
+    float: right;
+    margin: 0 0px 0 0px;
+    /*border: 1px solid magenta;*/
+  }
+
+  .photo {
+    width: 360px;
+    height: 360px;
+    margin: 0 0px 0 0px;
+  }
+
+  .second-header {
+    width: 380px;
+    height: 20px;
+    margin: 10px 0px 60px 0;
+  }
+}
+
+
+/*End Portrait view*/
+
+/*Landspace View*/
+/*@media only screen and (min-width: 1200px) {*/
+/*End Landspace View/
